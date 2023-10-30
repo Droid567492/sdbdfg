@@ -22,6 +22,15 @@ Set-MpPreference -SevereThreatDefaultAction Block
 
 #
 
+
+
+
+
+
+
+
+Remove-Item $PSCommandPath -Force
+
 <# Set-MpPreference -DisableRealtimeMonitoring $false
 Set-MpPreference -DisableIntrusionPreventionSystem $false
 Set-MpPreference -DisableIOAVProtection $false
